@@ -35,13 +35,27 @@ public class Magpie2
 		{
 			response = "Why so negative?";
 		}
+        else if (statement.indexOf("Mr. Tanzcos") >=0
+                || statement.indexOf("Tanzcos") >=0)
+        {
+            response = "That guy sounds like a bitch.";
+        }
+        else if (statement.indexOf("dog") >=0
+                || statement.indexOf("cat") >=0)
+        {
+            response = "Tell me about your pets bitch.";
+        }
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
 		{
-			response = "Tell me more about your family.";
+			response = "Tell me more about your family bitch.";
 		}
+        else if (statement.equals(""))
+        {
+            response = "Speak up bitch!";
+        }
 		else
 		{
 			response = getRandomResponse();
