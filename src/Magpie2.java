@@ -38,23 +38,43 @@ public class Magpie2
         else if (statement.indexOf("Mr. Tanzcos") >=0
                 || statement.indexOf("Tanzcos") >=0)
         {
-            response = "That guy sounds like a bitch.";
+            response = "That guy sounds like a cool guy. A cool nerd that is.";
         }
         else if (statement.indexOf("dog") >=0
                 || statement.indexOf("cat") >=0)
         {
-            response = "Tell me about your pets bitch.";
+            response = "Tell me about your pets.";
         }
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
 		{
-			response = "Tell me more about your family bitch.";
+			response = "Tell me more about your family.";
 		}
         else if (statement.equals(""))
         {
-            response = "Speak up bitch!";
+            response = "Speak up nerd!";
+        }
+        else if (statement.equals("League of Legends"))
+        {
+            response = "That game is only played by nerds";
+        }
+        else if (statement.equals("game"))
+        {
+            response = "NERD! Unless you're talking about football and man sports.";
+        }
+        else if (statement.equals("weather"))
+        {
+            response = "What are you, a weather nerd.";
+        }
+        else if (statement.equals("Breaking Bad"))
+        {
+            response = "Jessie, we have to cook!";
+        }
+        else if (statement.equals("TV"))
+        {
+            response = "whats your favorite show  nerd!";
         }
 		else
 		{
@@ -69,7 +89,7 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -90,6 +110,14 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
+        else if (whichResponse == 4)
+        {
+            response = "Really?";
+        }
+        else if (whichResponse == 5)
+        {
+            response = "That is awesome... Unless it isn't. Then it is sad or something";
+        }
 
 		return response;
 	}
